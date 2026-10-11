@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible defect in scrcpy version manager.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        For security issues, do not open a public report. Follow SECURITY.md instead.
+  - type: input
+    id: version
+    attributes:
+      label: scrcpy version manager version or commit
+      placeholder: e.g. release branch name or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Distribution and architecture
+      placeholder: e.g. Ubuntu 24.04, x86_64
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and expected behavior
+      description: Include the exact command and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include relevant output, exit status, and sanitized log excerpts.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I confirmed this is not a request for help with scrcpy itself.
+          required: true
+        - label: I removed secrets and private device information from the report.
+          required: true

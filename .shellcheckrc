@@ -1,0 +1,2 @@
+# Keep ShellCheck at its default severity; CI enforces the reported diagnostics.
+external-sources=true

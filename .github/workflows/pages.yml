@@ -1,0 +1,52 @@
+name: Publish documentation
+
+on:
+  push:
+    branches:
+      - "release/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Pages artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup static site
+        run: |
+          mkdir -p site/downloads
+          cp scrcpy_vm.sh site/downloads/scrcpy_vm.sh
+          sed -i "s|__REPOSITORY__|${GITHUB_REPOSITORY}|g" site/index.html
+          ! grep -q '__REPOSITORY__' site/index.html
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    name: Deploy Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

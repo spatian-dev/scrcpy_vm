@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark light" />
+        <title>Not found — scrcpy Version Manager</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .not-found {
+                min-height: 70vh;
+                display: grid;
+                place-items: center;
+                text-align: center;
+            }
+            .not-found-inner {
+                max-width: 560px;
+                padding-block: 80px;
+            }
+            .not-found-code {
+                margin: 0 0 15px;
+                color: var(--accent);
+                font: 500 12px var(--mono);
+                letter-spacing: 0.15em;
+            }
+            .not-found h1 {
+                font-size: clamp(48px, 8vw, 72px);
+            }
+            .not-found p:not(.not-found-code) {
+                color: var(--muted);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="site-header wrap">
+            <a
+                class="wordmark"
+                href="index.html"
+                aria-label="scrcpy Version Manager home"
+            >
+                <span class="mark" aria-hidden="true"
+                    ><span></span><span></span><span></span
+                ></span>
+                <span>scrcpy Version Manager</span>
+            </a>
+        </header>
+        <main id="main" class="not-found wrap">
+            <div class="not-found-inner">
+                <p class="not-found-code">ERROR 404</p>
+                <h1>Wrong turn.</h1>
+                <p>
+                    This page does not exist. The version manager and its
+                    documentation are still at the starting point.
+                </p>
+                <a class="button button-primary" href="index.html"
+                    >Back to scrcpy Version Manager
+                    <span aria-hidden="true">→</span></a
+                >
+            </div>
+        </main>
+    </body>
+</html>

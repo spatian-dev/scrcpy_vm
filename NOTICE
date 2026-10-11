@@ -1,0 +1,6 @@
+This repository contains the independent scrcpy version manager.
+
+scrcpy is a separate project maintained by Genymobile:
+https://github.com/Genymobile/scrcpy
+
+No scrcpy release binaries are bundled in this repository; the installer downloads release assets from the upstream project and verifies their signed checksum manifest before extraction.

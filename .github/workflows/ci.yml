@@ -1,0 +1,31 @@
+name: Shell checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Bash and tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Check Bash syntax
+        run: bash -n scrcpy_vm.sh && bash -n tests/test_cli.sh
+
+      - name: Run lifecycle tests
+        run: bash tests/test_cli.sh
+
+      - name: Install ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes shellcheck
+
+      - name: Lint shell scripts
+        run: shellcheck scrcpy_vm.sh tests/test_cli.sh

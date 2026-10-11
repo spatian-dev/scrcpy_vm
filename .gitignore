@@ -1,0 +1,10 @@
+# Local logs and editor files
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build/test outputs
+_site/
+coverage/
