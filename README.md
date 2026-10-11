@@ -27,7 +27,7 @@ chmod +x scrcpy_vm.sh
 Optionally:
 
 ```bash
-mv ./scrcpy_vm.sh /usr/bin/scrcpy_vm.sh
+mv ./scrcpy_vm.sh /usr/bin/scrcpy_vm
 scrcpy_vm -h
 ```
 

@@ -1,10 +1,10 @@
 # Changelog
 
-Notable changes to this project are recorded here. This project is still pre-1.0; interface changes may occur between tagged releases.
+## [Unreleased]
 
-## Unreleased
+## [1.0.0] - 2026-10-11
 
-- Rename the entry point to `scrcpy_vm.sh`.
-- Make uninstall without `-v` target the active managed version; allow `-v VERSION` to select a different installed version.
-- Keep verbosity level 0 identical to default output.
-- Add repository documentation, issue templates, CI checks, and a GitHub Pages workflow for `release/**` branches.
+- Initial public release of scrcpy Version Manager.
+- Versioned installation and symlink-based switching.
+- Release signature and checksum verification.
+- Version listing, uninstall, dependency checks, logging, and verbosity controls.
