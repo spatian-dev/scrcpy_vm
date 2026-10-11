@@ -1,36 +1,32 @@
 <!doctype html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="color-scheme" content="dark light" />
         <meta
             name="description"
-            content="scrcpy Version Manager is a small Bash version manager for verified official scrcpy releases on Linux x86-64."
-        />
+            content="scrcpy Version Manager is a small Bash version manager for verified official scrcpy releases on Linux x86-64." />
         <meta
             property="og:title"
-            content="scrcpy Version Manager — version management for scrcpy"
-        />
+            content="scrcpy Version Manager — version management for scrcpy" />
         <meta
             property="og:description"
-            content="Install verified releases side by side. Switch with one symlink. Keep the process explicit."
-        />
+            content="Install verified releases side by side. Switch with one symlink. Keep the process explicit." />
         <title>scrcpy Version Manager — version management for scrcpy</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="styles.css" />
     </head>
+
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header wrap">
             <a
                 class="wordmark"
                 href="#top"
-                aria-label="scrcpy Version Manager home"
-            >
-                <span class="mark" aria-hidden="true"
-                    ><span></span><span></span><span></span
-                ></span>
+                aria-label="scrcpy Version Manager home">
+                <span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>
                 <span>scrcpy Version Manager</span>
             </a>
             <nav aria-label="Main navigation">
@@ -38,9 +34,11 @@
                 <a href="#commands">Commands</a>
                 <a href="#security">Security</a>
                 <a href="https://github.com/__REPOSITORY__">Source</a>
-                <a class="nav-cta" href="#quick-start"
-                    >Get started <span aria-hidden="true">↗</span></a
-                >
+                <a class="nav-cta" href="#quick-start">Get started <span aria-hidden="true"><svg
+                            class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false">
+                            <path d="M7 17 17 7 M8 7h9v9" />
+                        </svg></span></a>
             </nav>
         </header>
 
@@ -59,18 +57,19 @@
                         with one symlink, and verify before installation.
                     </p>
                     <div class="hero-actions">
-                        <a class="button button-primary" href="#quick-start"
-                            >Quick start <span aria-hidden="true">↓</span></a
-                        >
-                        <a class="button button-secondary" href="#commands"
-                            >Explore commands</a
-                        >
+                        <a class="button button-primary" href="#quick-start">Quick start <span aria-hidden="true"><svg
+                                    class="icon-arrow icon-arrow--down" viewBox="0 0 24 24" aria-hidden="true"
+                                    focusable="false">
+                                    <path d="M12 5v14 M6 13l6 6 6-6" />
+                                </svg></span></a>
+                        <a class="button button-secondary" href="#commands">Explore commands</a>
                         <a
                             class="button button-secondary"
                             href="downloads/scrcpy_vm.sh"
-                            download
-                            >View script ↗</a
-                        >
+                            download>View script <svg class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24"
+                                aria-hidden="true" focusable="false">
+                                <path d="M7 17 17 7 M8 7h9v9" />
+                            </svg></a>
                     </div>
                     <p class="microcopy">
                         Independent community utility. Not affiliated with
@@ -79,44 +78,41 @@
                 </div>
                 <div
                     class="terminal-card"
-                    aria-label="Example of the installed directory structure"
-                >
+                    aria-label="Example of the installed directory structure">
                     <div class="terminal-top">
                         <div class="window-dots" aria-hidden="true">
                             <i></i><i></i><i></i>
                         </div>
-                        <span>filesystem</span
-                        ><span class="terminal-tag">example</span>
+                        <span>filesystem</span><span class="terminal-tag">example</span>
                     </div>
                     <div class="terminal-body">
                         <p class="terminal-label">Versioned installs</p>
                         <div class="tree-line">
-                            <span class="tree-glyph">⌄</span
-                            ><span class="tree-dir">/opt/scrcpy/</span>
+                            <span class="tree-glyph"><svg class="icon-arrow icon-arrow--chevron-down"
+                                    viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg></span><span class="tree-dir">/opt/scrcpy/</span>
                         </div>
                         <div class="tree-child">
                             <span class="tree-glyph">├─</span><span>4.1/</span>
                         </div>
                         <div class="tree-child tree-muted">
-                            <span class="tree-glyph">│</span
-                            ><span>├─ scrcpy</span>
+                            <span class="tree-glyph">│</span><span>├─ scrcpy</span>
                         </div>
                         <div class="tree-child">
-                            <span class="tree-glyph">└─</span><span>5.0.1/</span
-                            ><span class="active-chip">active</span>
+                            <span class="tree-glyph">└─</span><span>5.0.1/</span><span class="active-chip">active</span>
                         </div>
                         <div class="tree-child tree-muted">
-                            <span class="tree-glyph"> </span
-                            ><span>└─ scrcpy</span>
+                            <span class="tree-glyph"> </span><span>└─ scrcpy</span>
                         </div>
                         <div class="terminal-rule"></div>
                         <p class="terminal-label">One stable entry point</p>
                         <p class="symlink">
-                            <span class="path">/usr/bin/scrcpy</span
-                            ><span class="arrow"> → </span
-                            ><span class="target"
-                                >/opt/scrcpy/5.0.1/scrcpy</span
-                            >
+                            <span class="path">/usr/bin/scrcpy</span><span class="arrow"> <svg
+                                    class="icon-arrow icon-arrow--right" viewBox="0 0 24 24" aria-hidden="true"
+                                    focusable="false">
+                                    <path d="M5 12h14 M13 6l6 6-6 6" />
+                                </svg> </span><span class="target">/opt/scrcpy/5.0.1/scrcpy</span>
                         </p>
                     </div>
                 </div>
@@ -125,29 +121,16 @@
             <section class="trust-strip" aria-label="Project characteristics">
                 <div class="wrap trust-grid">
                     <div>
-                        <span class="trust-icon">01</span
-                        ><span
-                            ><b>Verified upstream files</b
-                            ><small
-                                >Signed checksum manifest + SHA-256</small
-                            ></span
-                        >
+                        <span class="trust-icon">01</span><span><b>Verified upstream files</b><small>Signed checksum
+                                manifest + SHA-256</small></span>
                     </div>
                     <div>
-                        <span class="trust-icon">02</span
-                        ><span
-                            ><b>Side-by-side releases</b
-                            ><small>No shared payload directory</small></span
-                        >
+                        <span class="trust-icon">02</span><span><b>Side-by-side releases</b><small>No shared payload
+                                directory</small></span>
                     </div>
                     <div>
-                        <span class="trust-icon">03</span
-                        ><span
-                            ><b>Recoverable changes</b
-                            ><small
-                                >Stage, activate, restore on failure</small
-                            ></span
-                        >
+                        <span class="trust-icon">03</span><span><b>Recoverable changes</b><small>Stage, activate,
+                                restore on failure</small></span>
                     </div>
                 </div>
             </section>
@@ -167,8 +150,7 @@
                         <div class="feature-number">A / Install</div>
                         <div
                             class="feature-visual visual-stack"
-                            aria-hidden="true"
-                        >
+                            aria-hidden="true">
                             <span>3.4.3</span><span>4.1</span><span>5.0.1</span>
                         </div>
                         <h3>Keep releases separate</h3>
@@ -182,9 +164,11 @@
                         <div class="feature-number">B / Switch</div>
                         <div
                             class="feature-visual visual-link"
-                            aria-hidden="true"
-                        >
-                            <span>scrcpy</span><b>↗</b><span>5.0.1</span>
+                            aria-hidden="true">
+                            <span>scrcpy</span><b><svg class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M7 17 17 7 M8 7h9v9" />
+                                </svg></b><span>5.0.1</span>
                         </div>
                         <h3>One stable command</h3>
                         <p>
@@ -196,8 +180,7 @@
                         <div class="feature-number">C / Inspect</div>
                         <div
                             class="feature-visual visual-audit"
-                            aria-hidden="true"
-                        >
+                            aria-hidden="true">
                             <span>✓</span><span>✓</span><span>✓</span><i></i>
                         </div>
                         <h3>Verify before extracting</h3>
@@ -219,10 +202,11 @@
                             the latest upstream release. Administrative
                             operations use <code>sudo</code> when needed.
                         </p>
-                        <a class="text-link" href="#commands"
-                            >View all commands
-                            <span aria-hidden="true">→</span></a
-                        >
+                        <a class="text-link" href="#commands">View all commands
+                            <span aria-hidden="true"><svg class="icon-arrow icon-arrow--right" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M5 12h14 M13 6l6 6-6 6" />
+                                </svg></span></a>
                     </div>
                     <div class="code-panel">
                         <div class="code-panel-header">
@@ -256,55 +240,35 @@
                 <div
                     class="command-table"
                     role="table"
-                    aria-label="Command reference"
-                >
+                    aria-label="Command reference">
                     <div class="command-row command-head" role="row">
-                        <span role="columnheader">Command</span
-                        ><span role="columnheader">Behavior</span>
+                        <span role="columnheader">Command</span><span role="columnheader">Behavior</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--install, -i</code
-                        ><span
-                            >Install and activate upstream latest, or the
-                            version passed with <code>-v</code>.</span
-                        >
+                        <code>--install, -i</code><span>Install and activate upstream latest, or the
+                            version passed with <code>-v</code>.</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--list, -l</code
-                        ><span
-                            >List managed versions and their installation
-                            directories.</span
-                        >
+                        <code>--list, -l</code><span>List managed versions and their installation
+                            directories.</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--switch, -s</code
-                        ><span
-                            >Switch to the newest installed release by default.
+                        <code>--switch, -s</code><span>Switch to the newest installed release by default.
                             Missing versions require confirmation before
-                            installing.</span
-                        >
+                            installing.</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--uninstall, -u</code
-                        ><span
-                            >Remove the active version by default; use
+                        <code>--uninstall, -u</code><span>Remove the active version by default; use
                             <code>-v VERSION</code> to choose another. Then
-                            activate the newest remaining version.</span
-                        >
+                            activate the newest remaining version.</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--verbose 0..2</code
-                        ><span
-                            >Default output, operational detail, or diagnostics.
-                            Level zero is identical to omitting the flag.</span
-                        >
+                        <code>--verbose 0..2</code><span>Default output, operational detail, or diagnostics.
+                            Level zero is identical to omitting the flag.</span>
                     </div>
                     <div class="command-row" role="row">
-                        <code>--log [DIR]</code
-                        ><span
-                            >Write a timestamped run log to the script directory
-                            or an existing writable directory.</span
-                        >
+                        <code>--log [DIR]</code><span>Write a timestamped run log to the script directory
+                            or an existing writable directory.</span>
                     </div>
                 </div>
                 <p class="section-note">
@@ -330,11 +294,8 @@
                             begins only after successful verification.
                         </p>
                         <div class="fingerprint">
-                            <span>PINNED KEY FINGERPRINT</span
-                            ><code
-                                >4569 58E8 5A18 5DD5 C2D1 E4E8 0C82 2B29 8461
-                                FA03</code
-                            >
+                            <span>PINNED KEY FINGERPRINT</span>
+                            <code>4569 58E8 5A18 5DD5 C2D1 E4E8 0C82 2B29 8461 FA03</code>
                         </div>
                     </div>
                 </div>
@@ -357,22 +318,30 @@
 
         <footer class="site-footer">
             <div class="wrap footer-inner">
-                <a class="wordmark" href="#top"
-                    ><span class="mark" aria-hidden="true"
-                        ><span></span><span></span><span></span></span
-                    ><span>scrcpy Version Manager</span></a
-                >
+                <a class="wordmark" href="#top"><span class="mark"
+                        aria-hidden="true"><span></span><span></span><span></span></span><span>scrcpy Version
+                        Manager</span></a>
                 <p>Independent utility for managing scrcpy releases.</p>
                 <div class="footer-links">
-                    <a href="https://github.com/__REPOSITORY__"
-                        >Source repository ↗</a
-                    ><a href="https://github.com/Genymobile/scrcpy"
-                        >Upstream scrcpy ↗</a
-                    ><a href="https://www.apache.org/licenses/LICENSE-2.0"
-                        >Apache 2.0 ↗</a
-                    ><a href="#top">Back to top ↑</a>
+                    <a href="https://github.com/__REPOSITORY__">Source repository <svg
+                            class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false">
+                            <path d="M7 17 17 7 M8 7h9v9" />
+                        </svg></a><a href="https://github.com/Genymobile/scrcpy">Upstream scrcpy <svg
+                            class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false">
+                            <path d="M7 17 17 7 M8 7h9v9" />
+                        </svg></a><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 <svg
+                            class="icon-arrow icon-arrow--up-right" viewBox="0 0 24 24" aria-hidden="true"
+                            focusable="false">
+                            <path d="M7 17 17 7 M8 7h9v9" />
+                        </svg></a><a href="#top">Back to top <svg class="icon-arrow icon-arrow--up" viewBox="0 0 24 24"
+                            aria-hidden="true" focusable="false">
+                            <path d="M12 19V5 M6 11l6-6 6 6" />
+                        </svg></a>
                 </div>
             </div>
         </footer>
     </body>
+
 </html>
