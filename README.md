@@ -21,14 +21,14 @@ Review the script before running it, then install the latest upstream release:
 
 ```bash
 chmod +x scrcpy_vm.sh
-./scrcpy_vm.sh -h
+./scrcpy_vm.sh
 ```
 
-Optionally:
+Optionally, make it available system-wide:
 
 ```bash
 mv ./scrcpy_vm.sh /usr/bin/scrcpy_vm
-scrcpy_vm -h
+scrcpy_vm
 ```
 
 The default installation is system-wide and may prompt to install missing dependencies or ADB. The default paths are `/opt/scrcpy` and `/usr/bin/scrcpy`; administrative operations use `sudo` when the script is not run as root.
